@@ -1,0 +1,207 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home | Sherine Thomas
+{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+
+    <div class="hero-container">
+
+        <!-- Left Side -->
+        <div class="hero-content">
+
+            <p class="hero-greeting">
+                HELLO, I'M
+            </p>
+
+            <h1>
+                Sherine <span>Thomas</span>
+            </h1>
+
+            <h2>
+                Aspiring Software Engineer
+            </h2>
+
+            <p class="hero-description">
+                I am a Computer Science and Business Systems student
+                passionate about software development, problem solving,
+                and building practical technology solutions.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="{% url 'projects' %}" class="primary-button">
+                    View My Projects
+                </a>
+
+                <a href="{% url 'contact' %}" class="secondary-button">
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Right Side -->
+        <div class="hero-card">
+
+            <div class="code-window">
+
+                <div class="window-top">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+                <div class="code-content">
+
+                    <p>
+                        <span class="code-purple">class</span>
+                        <span class="code-white">SoftwareEngineer:</span>
+                    </p>
+
+                    <p class="indent">
+                        <span class="code-purple">name</span>
+                        =
+                        <span class="code-green">
+                            "Sherine Thomas"
+                        </span>
+                    </p>
+
+                    <p class="indent">
+                        <span class="code-purple">role</span>
+                        =
+                        <span class="code-green">
+                            "Aspiring Software Engineer"
+                        </span>
+                    </p>
+
+                    <p class="indent">
+                        <span class="code-purple">skills</span>
+                        =
+                    </p>
+
+                    <p class="double-indent">
+                        [
+                        <span class="code-green">"Python"</span>,
+                        <span class="code-green">"Django"</span>,
+                    </p>
+
+                    <p class="double-indent">
+                        <span class="code-green">"SQL"</span>,
+                        <span class="code-green">"HTML"</span>,
+                    </p>
+
+                    <p class="double-indent">
+                        <span class="code-green">"CSS"</span>
+                        ]
+                    </p>
+
+                    <p class="indent">
+                        <span class="code-purple">passion</span>
+                        =
+                        <span class="code-green">
+                            "Building & Learning"
+                        </span>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Quick Introduction -->
+
+<section class="intro-section">
+
+    <div class="section-container">
+
+        <p class="section-label">
+            WHAT I DO
+        </p>
+
+        <h2 class="section-heading">
+            Turning ideas into <span>practical solutions.</span>
+        </h2>
+
+        <p class="section-description">
+            I enjoy developing applications, working with databases,
+            solving programming problems, and continuously improving
+            my software development skills.
+        </p>
+
+
+        <div class="intro-cards">
+
+            <div class="intro-card">
+
+                <div class="card-number">
+                    01
+                </div>
+
+                <h3>
+                    Software Development
+                </h3>
+
+                <p>
+                    Building structured and practical applications
+                    using Python, Django and web technologies.
+                </p>
+
+            </div>
+
+
+            <div class="intro-card">
+
+                <div class="card-number">
+                    02
+                </div>
+
+                <h3>
+                    Problem Solving
+                </h3>
+
+                <p>
+                    Applying logical and analytical thinking to
+                    understand problems and develop effective solutions.
+                </p>
+
+            </div>
+
+
+            <div class="intro-card">
+
+                <div class="card-number">
+                    03
+                </div>
+
+                <h3>
+                    Continuous Learning
+                </h3>
+
+                <p>
+                    Exploring new concepts and strengthening my
+                    technical skills through projects and practice.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,129 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        {% block title %}
+        Sherine Thomas | Aspiring Software Engineer
+        {% endblock %}
+    </title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet"
+          href="{% static 'css/style.css' %}">
+
+</head>
+
+
+<body>
+
+    <!-- =========================
+         NAVIGATION BAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <!-- Logo -->
+
+            <a href="{% url 'home' %}"
+               class="logo">
+
+                Sherine<span>.</span>
+
+            </a>
+
+
+            <!-- Navigation -->
+
+            <nav>
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="{% url 'home' %}">
+                            Home
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="{% url 'about' %}">
+                            About Me
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="{% url 'skills' %}">
+                            Skills
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="{% url 'projects' %}">
+                            Projects
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="{% url 'education' %}">
+                            Education
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="{% url 'contact' %}"
+                           class="contact-button">
+
+                            Contact
+
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main>
+
+        {% block content %}
+
+        {% endblock %}
+
+    </main>
+
+
+</body>
+
+</html>
